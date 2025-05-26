@@ -20,3 +20,4 @@ repos:
       meta-hailo-tappas:
 
   meta-truen:
+    path: ./meta-truen
