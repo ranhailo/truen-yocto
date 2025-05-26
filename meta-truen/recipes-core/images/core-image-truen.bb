@@ -1,2 +1,2 @@
-require ץץ/meta-hailo-bsp/recipes-core/images/core-image-hailo.bb
+require ../meta-hailo-bsp/recipes-core/images/core-image-hailo.bb
 
