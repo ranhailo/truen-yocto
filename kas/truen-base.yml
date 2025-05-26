@@ -1,0 +1,30 @@
+header:
+  version: 11
+  includes:
+  - repo: meta-hailo-soc
+    file: kas/yocto-base.yml
+
+# local_conf_header:
+
+repos:
+  # Override meta-hailo-soc to pin to specific version and reference all layers
+  meta-hailo-soc:
+    url: https://github.com/hailo-ai/meta-hailo-soc.git
+    refspec: 47240016db9a6a73934c128df0f818e7b7840d9c  # v1.7.0
+    layers:
+      meta-hailo-bsp:
+      meta-hailo-dsp:
+      meta-hailo-imaging:
+      meta-hailo-linux:
+      meta-hailo-media-library:
+      meta-hailo-tappas:
+
+  meta-hailo:
+    url: "https://github.com/hailo-ai/meta-hailo.git"
+    refspec: kirkstone
+    layers:
+      meta-hailo-libhailort:
+      meta-hailo-vpu:
+
+  meta-truen:
+    path: ./meta-truen
