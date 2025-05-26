@@ -6,4 +6,4 @@ header:
   - kas/truen-bullet-4k-machine.yml
 
 target:
-  - core-image-truen.yml
+  - core-image-truen

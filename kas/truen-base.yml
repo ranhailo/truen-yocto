@@ -19,5 +19,12 @@ repos:
       meta-hailo-media-library:
       meta-hailo-tappas:
 
+  meta-hailo:
+    url: "https://github.com/hailo-ai/meta-hailo.git"
+    refspec: kirkstone
+    layers:
+      meta-hailo-libhailort:
+      meta-hailo-vpu:
+
   meta-truen:
     path: ./meta-truen
