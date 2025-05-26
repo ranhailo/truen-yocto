@@ -2,8 +2,8 @@ build_system: openembedded
 header:
   version: 11
   includes:
-  - truen-base.yml
-  - truen-bullet-4k-machine.yml
+  - kas/truen-base.yml
+  - kas/truen-bullet-4k-machine.yml
 
 target:
   - core-image-truen.yml
