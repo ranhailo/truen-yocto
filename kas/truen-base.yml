@@ -4,7 +4,17 @@ header:
   - repo: meta-hailo-soc
     file: kas/yocto-base.yml
 
-# local_conf_header:
+local_conf_header:
+  DSP: |
+    DSP_COMPILATION_MODE = "release"
+    DSP_FULL_IMAGING = "false"
+  gstreamer: |
+    ADD_GSTREAMER_TO_IMAGE = "true"
+  flags: |
+    LICENSE_FLAGS_ACCEPTED:append = " commercial"
+  buildhistory: |
+    INHERIT += "buildhistory"
+    BUILDHISTORY_COMMIT = "1"
 
 repos:
   # Override meta-hailo-soc to pin to specific version and reference all layers
