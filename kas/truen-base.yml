@@ -2,7 +2,7 @@ header:
   version: 11
   includes:
   - repo: meta-hailo-soc
-    file: kas/hailo15-core.yml
+    file: kas/yocto-base.yml
 
 # local_conf_header:
 

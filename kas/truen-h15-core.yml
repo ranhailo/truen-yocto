@@ -3,6 +3,8 @@ header:
   version: 11
   includes:
   - kas/truen-base.yml
+  - repo: meta-hailo-soc
+    file: kas/targets/hailo15-target-core-image-hailo.yml
   - kas/truen-bullet-4k-machine.yml
 
 target:
